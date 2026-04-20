@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: carlosortiz-g/carlosortizg/python-app:${{ github.sha }}
+          tags: carlosortizg/python-app:${{ github.sha }}
