@@ -38,7 +38,8 @@ jobs:
         run: |
           curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd644
           chmod +x argocd-linux-amd64
-          sudo mv ./argocd-linux-amd64 /usr/local/bin/argocd
+          sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
+          rm argocd-linux-amd64
 
 
       - name: Argocd app sync
