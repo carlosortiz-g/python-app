@@ -42,7 +42,7 @@ jobs:
         shell: bash
         run: |
           echo ${{needs.ci.outputs.commit_id}}
-          sudo apt install wget
+          sudo apt update && sudo apt install -y wget
           sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
           yq e '.image.tag = "${{needs.ci.outputs.commit_id}}"' -i charts/python-app/values.yaml
 
