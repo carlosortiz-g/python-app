@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: carlosortizg/python-app
   pullPolicy: IfNotPresent
-  tag: 7d753a
+  tag: d74948
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
