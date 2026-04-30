@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: carlosortizg/python-app
   pullPolicy: IfNotPresent
-  tag: v2
+  tag: 7d753a
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -20,7 +20,7 @@ service:
   port: 5000
 httpRoute:
   enabled: true
-  parentRefs: 
+  parentRefs:
     - name: "my-gateway"
 ingress:
   enabled: true
