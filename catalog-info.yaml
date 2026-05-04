@@ -5,6 +5,7 @@ metadata:
   description: esta app en python muestra la hora. 
   annotations:
     github.com/project-slug: carlosortiz-g/python-app
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   owner: development
